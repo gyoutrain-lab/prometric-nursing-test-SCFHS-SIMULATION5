@@ -926,7 +926,798 @@ const questions = [
     }
   }
 },
-
+{
+  q: "47. Which of the following describes the function of Immunoglobulin G (IgG)?",
+  options: [
+    { text: "It provides temporary immunity to bacteria and toxins the mother has developed", tag: "SCFHS" },
+    { text: "It does not cross the placenta and is present in colostrum and breast milk", tag: "STR" },
+    { text: "It protects against gastrointestinal and respiratory system infections", tag: "SAFE_DELAY" },
+    { text: "It protects against gram-negative bacteria and can be found in cord blood", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "IgG provides passive immunity to the newborn, transferred from the mother, against pathogens she has immunity to.",
+    distractors: {
+      STR: "IgG does cross the placenta; this statement is incorrect.",
+      SAFE_DELAY: "IgG does not specifically target GI and respiratory infections alone.",
+      NCLEX: "Protection against gram-negative bacteria alone is not exclusive to IgG."
+    }
+  }
+},
+{
+  q: "48. A nurse is explaining to nursing students how to assess edema. Which edema assessment score indicates edema of the lower extremities, face, hands, and sacral area?",
+  options: [
+    { text: "+1", tag: "STR" },
+    { text: "+2", tag: "SAFE_DELAY" },
+    { text: "+3", tag: "SCFHS" },
+    { text: "+4", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "A +3 edema score indicates significant edema that can extend to lower extremities, face, hands, and sacral area.",
+    distractors: {
+      STR: "+1 indicates mild edema limited to the feet and ankles.",
+      SAFE_DELAY: "+2 indicates moderate pitting edema, generally below the knees.",
+      NCLEX: "+4 indicates severe, generalized edema, often with marked pitting."
+    }
+  }
+},
+{
+  q: "49. During an ongoing blood transfusion, the nurse observes that the patient has difficulty breathing and is shivering. What is the nursing priority?",
+  options: [
+    { text: "Stop the infusion", tag: "SCFHS" },
+    { text: "Call the physician", tag: "STR" },
+    { text: "Give IV fluids at a slower rate", tag: "SAFE_DELAY" },
+    { text: "Continue transfusion and monitor", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Stopping the transfusion immediately is the priority to prevent worsening of a transfusion reaction.",
+    distractors: {
+      STR: "Calling the physician is important but not the first action.",
+      SAFE_DELAY: "Slowing IV fluids does not stop the reaction.",
+      NCLEX: "Continuing the transfusion could be life-threatening."
+    }
+  }
+},
+{
+  q: "50. What is the normal weight gain during pregnancy for a healthy adult woman?",
+  options: [
+    { text: "12.5–18 kg", tag: "SCFHS" },
+    { text: "11.5–16 kg", tag: "STR" },
+    { text: "7–11 kg", tag: "SAFE_DELAY" },
+    { text: "5–9 kg", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "The recommended normal weight gain for a healthy adult during pregnancy is 12.5–18 kg.",
+    distractors: {
+      STR: "11.5–16 kg is slightly lower than the recommended range for normal weight gain.",
+      SAFE_DELAY: "7–11 kg is below the normal recommendation.",
+      NCLEX: "5–9 kg is considered inadequate weight gain."
+    }
+  }
+},
+{
+  q: "51. A three-year-old returns to the clinic after 4 days of gastroenteritis and dehydration. Vomiting has stopped, and the child tolerates liquids and soft foods, but diarrhea persists. How should the nurse assess the child’s skin turgor?",
+  options: [
+    { text: "Grasp the skin over the abdomen with two fingers and lift", tag: "SCFHS" },
+    { text: "Grasp the skin over the forehead with two fingers and lift", tag: "STR" },
+    { text: "Hold the patient’s mouth open and assess the tongue for deep creases", tag: "SAFE_DELAY" },
+    { text: "Draw blood to run BUN and creatinine", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Abdominal skin turgor is most reliable for assessing dehydration in children.",
+    distractors: {
+      STR: "Forehead turgor is less accurate in young children.",
+      SAFE_DELAY: "Tongue assessment is supportive but not primary.",
+      NCLEX: "Lab tests provide supportive data but are not first-line assessment."
+    }
+  }
+},
+{
+  q: "52. A diabetic patient had a left lower-leg amputation. After three days of wound care, which sign indicates poor glucose control in wound healing?",
+  options: [
+    { text: "Separation of the wound edges", tag: "SCFHS" },
+    { text: "Swelling of the stump", tag: "STR" },
+    { text: "Bleeding of the stump", tag: "SAFE_DELAY" },
+    { text: "Mild redness of the wound site", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Wound edge separation indicates impaired healing, often due to poor glucose control.",
+    distractors: {
+      STR: "Swelling can be normal postoperatively.",
+      SAFE_DELAY: "Minor bleeding may occur but is less specific.",
+      NCLEX: "Mild redness is a normal inflammatory response."
+    }
+  }
+},
+{
+  q: "53. A young patient with a left-arm burn weighing 48 kg presents to the ER. How is fluid requirement calculated according to the Parkland formula?",
+  options: [
+    { text: "1572 mL", tag: "SCFHS" },
+    { text: "1220 mL", tag: "STR" },
+    { text: "1728 mL", tag: "SAFE_DELAY" },
+    { text: "2000 mL", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "The Parkland formula calculates fluid based on %TBSA and body weight; 1572 mL is correct for this patient scenario.",
+    distractors: {
+      STR: "1220 mL underestimates fluid needs.",
+      SAFE_DELAY: "1728 mL slightly overestimates but not correct for this calculation.",
+      NCLEX: "2000 mL is a rounded estimation, not precise."
+    }
+  }
+},
+{
+  q: "54. Which dietary advice should a nurse provide to students regarding management of premenstrual syndrome?",
+  options: [
+    { text: "Decrease intake of caffeine to minimize irritability, insomnia, and anxiety", tag: "SCFHS" },
+    { text: "Take three healthy meals a day to prevent hypoglycemia", tag: "STR" },
+    { text: "Include simple sugars to prevent low blood glucose", tag: "SAFE_DELAY" },
+    { text: "Drink 2000 mL of fluid daily to flush kidneys", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Reducing caffeine helps minimize PMS-related irritability and insomnia.",
+    distractors: {
+      STR: "Healthy meals are important but secondary for symptom management.",
+      SAFE_DELAY: "Simple sugars may worsen symptoms rather than help.",
+      NCLEX: "Excess fluids do not specifically reduce PMS symptoms."
+    }
+  }
+},
+{
+  q: "55. A nurse calls together an interdisciplinary team for a terminally ill patient. What type of care is being provided?",
+  options: [
+    { text: "Palliative", tag: "SCFHS" },
+    { text: "Curative", tag: "STR" },
+    { text: "Preventive", tag: "SAFE_DELAY" },
+    { text: "Respite", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Palliative care focuses on comfort and quality of life for terminally ill patients.",
+    distractors: {
+      STR: "Curative care aims to treat disease, not comfort in terminal illness.",
+      SAFE_DELAY: "Preventive care is aimed at disease prevention.",
+      NCLEX: "Respite care is for temporary caregiver relief, not primary patient care."
+    }
+  }
+},
+{
+  q: "56. A postpartum mother calls reporting very heavy bright-red bleeding. What is the best advice to give?",
+  options: [
+    { text: "Lie down, massage lower abdomen, and go to hospital if bleeding persists", tag: "SCFHS" },
+    { text: "Don’t worry; it is normal", tag: "STR" },
+    { text: "Call your doctor and ask what to do", tag: "SAFE_DELAY" },
+    { text: "Lie down for an hour, then check bleeding and call if heavy", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Heavy bright-red bleeding postpartum is an emergency; immediate measures and hospital evaluation are needed.",
+    distractors: {
+      STR: "Dismissing heavy bleeding is unsafe.",
+      SAFE_DELAY: "Calling the doctor is good but immediate action is required.",
+      NCLEX: "Waiting an hour may delay urgent care."
+    }
+  }
+},
+{
+  q: "57. A 15-year-old girl admitted after an MVA has a fracture in her left leg and facial wound. Which developmental task is most important at this age?",
+  options: [
+    { text: "Identity vs. Role confusion", tag: "SCFHS" },
+    { text: "Initiative vs. Guilt", tag: "STR" },
+    { text: "Industry vs. Inferiority", tag: "SAFE_DELAY" },
+    { text: "Trust vs. Mistrust", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Adolescents are focused on developing identity and personal sense of self.",
+    distractors: {
+      STR: "Initiative vs. guilt occurs in preschool age.",
+      SAFE_DELAY: "Industry vs. inferiority occurs in school-age children.",
+      NCLEX: "Trust vs. mistrust occurs in infancy."
+    }
+  }
+},
+{
+  q: "58. A patient with spinal cord injury states, 'I have no constitution; I can’t do anything for myself.' Which term best describes this condition?",
+  options: [
+    { text: "Powerlessness", tag: "SCFHS" },
+    { text: "Delusions", tag: "STR" },
+    { text: "Suicidal", tag: "SAFE_DELAY" },
+    { text: "Resignation", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "The patient exhibits feelings of powerlessness due to loss of autonomy.",
+    distractors: {
+      STR: "Delusions are false beliefs, not feelings of helplessness.",
+      SAFE_DELAY: "Suicidal ideation is not indicated here.",
+      NCLEX: "Resignation is passive acceptance but not the precise psychological term."
+    }
+  }
+},
+{
+  q: "59. A 71-year-old male underwent burr hole craniotomy for subdural hematoma. Which sign indicates meningitis?",
+  options: [
+    { text: "Positive Brudzinski’s sign", tag: "SCFHS" },
+    { text: "Negative Kernig’s sign", tag: "STR" },
+    { text: "Absence of nuchal rigidity", tag: "SAFE_DELAY" },
+    { text: "Glasgow Coma Scale 14 points", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Positive Brudzinski’s sign is a classic indicator of meningeal irritation.",
+    distractors: {
+      STR: "Negative Kernig’s sign indicates absence of meningeal irritation.",
+      SAFE_DELAY: "Lack of nuchal rigidity suggests no meningeal involvement.",
+      NCLEX: "GCS score measures consciousness, not meningitis."
+    }
+  }
+},
+{
+  q: "60. Which of the following is an indication of myocardial infarction (MI) on ECG?",
+  options: [
+    { text: "ST elevation", tag: "SCFHS" },
+    { text: "ST depression", tag: "STR" },
+    { text: "Short ST segment", tag: "SAFE_DELAY" },
+    { text: "None of the above", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "ST elevation on ECG is a classic sign of acute MI.",
+    distractors: {
+      STR: "ST depression indicates ischemia but not acute MI.",
+      SAFE_DELAY: "Short ST segments are not a diagnostic criterion for MI.",
+      NCLEX: "MI is not indicated by 'none of the above'."
+    }
+  }
+},
+{
+  q: "61. A nurse is caring for a patient with congestive heart failure (CHF). Which symptom indicates fluid overload?",
+  options: [
+    { text: "Dyspnea at rest", tag: "SCFHS" },
+    { text: "Mild fatigue after activity", tag: "STR" },
+    { text: "Weight loss", tag: "SAFE_DELAY" },
+    { text: "Normal blood pressure", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Dyspnea at rest indicates fluid overload in CHF patients.",
+    distractors: {
+      STR: "Mild fatigue is expected in CHF but not a direct sign of fluid overload.",
+      SAFE_DELAY: "Weight loss is not a sign of fluid overload.",
+      NCLEX: "Normal blood pressure does not indicate fluid overload."
+    }
+  }
+},
+{
+  q: "62. A nurse monitors a client receiving potassium chloride IV. Which observation indicates a potential complication?",
+  options: [
+    { text: "Cardiac arrhythmia", tag: "SCFHS" },
+    { text: "Normal heart rate", tag: "STR" },
+    { text: "Urine output 1.5 mL/kg/hr", tag: "SAFE_DELAY" },
+    { text: "Slight thirst", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hyperkalemia can cause life-threatening cardiac arrhythmias.",
+    distractors: {
+      STR: "Normal heart rate is expected and not alarming.",
+      SAFE_DELAY: "Normal urine output is reassuring.",
+      NCLEX: "Slight thirst is not a complication of potassium therapy."
+    }
+  }
+},
+{
+  q: "63. A post-operative patient in the surgical unit shows increasing weakness, rapid pulse, and hypotension. Which finding is most indicative of a developing complication?",
+  options: [
+    { text: "Weak and rapid pulse", tag: "SCFHS" },
+    { text: "Increasing alertness", tag: "STR" },
+    { text: "Negative Homans' sign", tag: "SAFE_DELAY" },
+    { text: "Minimal bowel sounds in four quadrants", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Weak and rapid pulse indicates early signs of shock, a serious post-operative complication.",
+    distractors: {
+      STR: "Increasing alertness is not a complication.",
+      SAFE_DELAY: "Negative Homans' sign does not indicate shock.",
+      NCLEX: "Minimal bowel sounds may be expected postoperatively but is not indicative of acute complication."
+    }
+  }
+},
+{
+  q: "64. A patient is scheduled for an abdominal aneurysm repair. What type of surgical intervention is this?",
+  options: [
+    { text: "Curative", tag: "SCFHS" },
+    { text: "Diagnostic", tag: "STR" },
+    { text: "Transplant", tag: "SAFE_DELAY" },
+    { text: "Palliative", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Abdominal aneurysm repair is a curative procedure to prevent rupture.",
+    distractors: {
+      STR: "Diagnostic procedures are for determining the presence of disease.",
+      SAFE_DELAY: "Transplant procedures involve organ replacement.",
+      NCLEX: "Palliative procedures relieve symptoms but do not cure."
+    }
+  }
+},
+{
+  q: "65. Mr. Ahmed is admitted to ICU with congestive heart failure. His vital signs: BP 110/60 mmHg, HR 120, stroke volume 80 mL. What is the expected cardiac output?",
+  options: [
+    { text: "9600 mL/min", tag: "SCFHS" },
+    { text: "1800 mL/min", tag: "STR" },
+    { text: "6900 mL/min", tag: "SAFE_DELAY" },
+    { text: "8100 mL/min", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Cardiac output = HR × SV = 120 × 80 = 9600 mL/min.",
+    distractors: {
+      STR: "1800 mL/min is too low based on HR and SV.",
+      SAFE_DELAY: "6900 mL/min is an incorrect calculation.",
+      NCLEX: "8100 mL/min is incorrect; calculation must use HR × SV."
+    }
+  }
+},
+{
+  q: "66. What is the normal systolic blood pressure for a newborn?",
+  options: [
+    { text: "80/60 mmHg", tag: "SCFHS" },
+    { text: "60/20 mmHg", tag: "STR" },
+    { text: "100/40 mmHg", tag: "SAFE_DELAY" },
+    { text: "40/30 mmHg", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Normal newborn systolic BP is approximately 80 mmHg with diastolic around 60 mmHg.",
+    distractors: {
+      STR: "60/20 mmHg is too low for a healthy newborn.",
+      SAFE_DELAY: "100/40 mmHg is slightly high for a newborn.",
+      NCLEX: "40/30 mmHg is critically low."
+    }
+  }
+},
+{
+  q: "67. A 55-year-old post-heart transplant patient taking cyclosporine reports stomach cramping, diarrhea, and muscle twitching. Which electrolyte is most likely elevated?",
+  options: [
+    { text: "Potassium", tag: "SCFHS" },
+    { text: "Calcium", tag: "STR" },
+    { text: "Sodium", tag: "SAFE_DELAY" },
+    { text: "Magnesium", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Cyclosporine can cause hyperkalemia, leading to muscle twitching and GI upset.",
+    distractors: {
+      STR: "Calcium is not commonly affected by cyclosporine.",
+      SAFE_DELAY: "Sodium disturbances are less likely with these symptoms.",
+      NCLEX: "Magnesium may cause neuromuscular symptoms but is not typical here."
+    }
+  }
+},
+{
+  q: "68. After accessing patient medical records, which nurse behavior indicates a breach of confidentiality?",
+  options: [
+    { text: "Disclosing patient information", tag: "SCFHS" },
+    { text: "Reviewing patient medical record", tag: "STR" },
+    { text: "Reading patient care plan", tag: "SAFE_DELAY" },
+    { text: "Documenting medication administered", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Disclosing patient information without authorization breaches confidentiality.",
+    distractors: {
+      STR: "Reviewing records for care is appropriate.",
+      SAFE_DELAY: "Reading care plans is part of patient care.",
+      NCLEX: "Documenting medications is standard practice."
+    }
+  }
+},
+{
+  q: "69. Which variable is a major factor affecting community health?",
+  options: [
+    { text: "Personal behavioral choices, including socio-cultural factors", tag: "SCFHS" },
+    { text: "Number of healthcare providers in hospitals", tag: "STR" },
+    { text: "Quality of public safety officers", tag: "SAFE_DELAY" },
+    { text: "Number of recreational services", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Individual behaviors and socio-cultural factors are primary determinants of community health.",
+    distractors: {
+      STR: "Number of providers contributes but is less significant.",
+      SAFE_DELAY: "Public safety quality influences health but is secondary.",
+      NCLEX: "Recreational services have indirect effects."
+    }
+  }
+},
+{
+  q: "70. During an emergency code for ventricular fibrillation, the provider shouts 'CLEAR!'. What should the nurse do immediately?",
+  options: [
+    { text: "Step away from the bed and ensure others are clear", tag: "SCFHS" },
+    { text: "Shut off mechanical ventilator", tag: "STR" },
+    { text: "Shut off IV infusion", tag: "SAFE_DELAY" },
+    { text: "Place conductive gel pads on the chest", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Safety requires stepping away before defibrillation to prevent accidental shock.",
+    distractors: {
+      STR: "Shutting off ventilator is not immediate priority.",
+      SAFE_DELAY: "Shutting off IV is unnecessary immediately.",
+      NCLEX: "Pads placement occurs before 'CLEAR', not after."
+    }
+  }
+},
+{
+  q: "71. Conscious victim of a motor vehicle accident arrives at the emergency department. The patient is gasping for air, is extremely anxious, and has a deviated trachea. What diagnosis should the nurse anticipate?",
+  options: [
+    { text: "Pleural effusion", tag: "STR" },
+    { text: "Tension pneumothorax", tag: "SCFHS" },
+    { text: "Cardiac tamponade", tag: "NCLEX" },
+    { text: "Severe asthma", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "A deviated trachea, respiratory distress, and anxiety are classic signs of tension pneumothorax.",
+    distractors: {
+      STR: "Pleural effusion develops gradually and usually does not cause tracheal deviation acutely.",
+      NCLEX: "Cardiac tamponade may present with hypotension and muffled heart sounds, not tracheal deviation.",
+      SAFE_DELAY: "Severe asthma causes respiratory distress but not tracheal deviation."
+    }
+  }
+},
+{
+  q: "72. A child has third-degree burns of the hand, chest, and face. Which nursing diagnosis takes priority?",
+  options: [
+    { text: "Ineffective airway clearance", tag: "SCFHS" },
+    { text: "Disturbed body image", tag: "STR" },
+    { text: "Impaired urinary elimination", tag: "NCLEX" },
+    { text: "Risk for infection", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway management is the top priority in burns, especially involving the face and neck.",
+    distractors: {
+      STR: "Body image is important but secondary to airway and life-threatening issues.",
+      NCLEX: "Urinary elimination is not immediately life-threatening.",
+      SAFE_DELAY: "Infection is a risk, but airway clearance takes precedence."
+    }
+  }
+},
+{
+  q: "73. The nurse administers digoxin 0.25 mg by mouth rather than the prescribed dose of 0.125 mg to the client. After assessing the client and notifying the health care provider, which action should the nurse implement first?",
+  options: [
+    { text: "Administer digoxin immune Fab", tag: "SCFHS" },
+    { text: "Tell the client about the medication error", tag: "SAFE_DELAY" },
+    { text: "Write an incident report", tag: "STR" },
+    { text: "Tell the client about the adverse effects of digoxin", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Administering digoxin immune Fab is the priority to prevent digoxin toxicity.",
+    distractors: {
+      SAFE_DELAY: "Informing the client is important but not life-saving.",
+      STR: "Reporting the incident is required but secondary to immediate intervention.",
+      NCLEX: "Teaching about adverse effects is important but not immediate priority."
+    }
+  }
+},
+{
+  q: "74. A nurse is caring for a child with traction of a fractured bone. The doctor has ordered to maintain even and constant traction. What is the correct understanding of this order?",
+  options: [
+    { text: "Add or remove weights every other day", tag: "STR" },
+    { text: "Allow weights to hang free continuously", tag: "SCFHS" },
+    { text: "Allow weights to hang free every 12 hours to achieve good circulation", tag: "SAFE_DELAY" },
+    { text: "Elevate head and foot of the bed alternatively when in pain", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Weights must hang freely continuously to maintain constant traction.",
+    distractors: {
+      STR: "Adding/removing weights intermittently disrupts traction.",
+      SAFE_DELAY: "Intermittent adjustment every 12 hours does not maintain constant traction.",
+      NCLEX: "Elevating head/foot alternately may affect traction and is not correct."
+    }
+  }
+},
+{
+  q: "75. A 70-year-old man presents with difficulty sleeping at night and needs three pillows behind his back to sleep. Lung exam reveals crackles and wheezes. Heart auscultation confirms an S gallop. What is the most likely underlying health problem?",
+  options: [
+    { text: "Asthma", tag: "STR" },
+    { text: "Pulmonary stenosis", tag: "SAFE_DELAY" },
+    { text: "Right-sided heart failure", tag: "NCLEX" },
+    { text: "Left-sided heart failure", tag: "SCFHS" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Orthopnea, crackles, and S3 (gallop) suggest left-sided heart failure.",
+    distractors: {
+      STR: "Asthma may cause wheezing but not S gallop or orthopnea.",
+      SAFE_DELAY: "Pulmonary stenosis presents differently and does not explain these symptoms.",
+      NCLEX: "Right-sided heart failure causes peripheral edema, not pulmonary crackles."
+    }
+  }
+},
+{
+  q: "76. A 12-year-old child has been diagnosed with Diabetes insipidus. Which organ disorder is responsible?",
+  options: [
+    { text: "Posterior pituitary", tag: "SCFHS" },
+    { text: "Adrenal medulla", tag: "STR" },
+    { text: "Anterior pituitary", tag: "SAFE_DELAY" },
+    { text: "Adrenal cortex", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Diabetes insipidus is due to posterior pituitary dysfunction affecting ADH secretion.",
+    distractors: {
+      STR: "Adrenal medulla disorders do not cause DI.",
+      SAFE_DELAY: "Anterior pituitary disorders affect different hormones, not ADH.",
+      NCLEX: "Adrenal cortex disorders affect cortisol and aldosterone, not ADH."
+    }
+  }
+},
+{
+  q: "77. A client has been admitted with chest pain. Cardiac enzyme results show elevated CK-MB, troponin T, and troponin I. What diagnosis is compatible with these results?",
+  options: [
+    { text: "Stable angina", tag: "STR" },
+    { text: "Unstable angina", tag: "SAFE_DELAY" },
+    { text: "Prinzmetal’s angina", tag: "NCLEX" },
+    { text: "New-onset myocardial infarction (MI)", tag: "SCFHS" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Elevated cardiac enzymes indicate myocardial cell injury consistent with acute MI.",
+    distractors: {
+      STR: "Stable angina does not elevate cardiac enzymes.",
+      SAFE_DELAY: "Unstable angina may elevate troponins minimally but not CK-MB.",
+      NCLEX: "Prinzmetal’s angina usually does not cause enzyme elevation."
+    }
+  }
+},
+{
+  q: "78. A patient complains of depression, muscle weakness, and continuous fatigue. Which deficiency is suspected?",
+  options: [
+    { text: "Vitamin B deficiency", tag: "SCFHS" },
+    { text: "Vitamin D deficiency", tag: "STR" },
+    { text: "Vitamin E deficiency", tag: "NCLEX" },
+    { text: "Vitamin K deficiency", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Symptoms are consistent with vitamin B deficiency affecting neuromuscular function.",
+    distractors: {
+      STR: "Vitamin D deficiency mainly affects bones and calcium metabolism.",
+      NCLEX: "Vitamin E deficiency affects neurological function but less common for fatigue and depression.",
+      SAFE_DELAY: "Vitamin K deficiency affects coagulation, not neuromuscular symptoms."
+    }
+  }
+},
+{
+  q: "79. At the beginning of the afternoon shift, a nurse receives handover for a post-coronary angioplasty patient. The monitor waveform and carotid pulse indicate a life-threatening rhythm. What is the most appropriate action?",
+  options: [
+    { text: "Give a DC shock", tag: "SCFHS" },
+    { text: "Refuse to receive patient", tag: "STR" },
+    { text: "Check ventilator settings", tag: "SAFE_DELAY" },
+    { text: "Shout for help and start chest compression", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Defibrillation (DC shock) is the priority for life-threatening arrhythmias post-angioplasty.",
+    distractors: {
+      STR: "Refusing to receive patient is not appropriate.",
+      SAFE_DELAY: "Checking ventilators is supportive but not immediate intervention.",
+      NCLEX: "Starting compressions may be necessary if pulseless, but defibrillation is primary if shockable rhythm present."
+    }
+  }
+},
+{
+  q: "80. The nurse assists the primary health care provider with chest tube removal. During the procedure, the nurse instructs the client to perform which action?",
+  options: [
+    { text: "Inhale deeply", tag: "STR" },
+    { text: "Breathe normally", tag: "SAFE_DELAY" },
+    { text: "Breathe out forcefully", tag: "SCFHS" },
+    { text: "Take a deep breath and hold it", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Exhaling (breathing out forcefully) during chest tube removal helps prevent air embolism and facilitates safe removal.",
+    distractors: {
+      STR: "Inhaling deeply may introduce air into pleural space.",
+      SAFE_DELAY: "Normal breathing is not sufficient for safe tube removal.",
+      NCLEX: "Holding breath increases risk of complications during removal."
+    }
+  }
+},
+{
+  q: "81. A nurse is caring for a postoperative client who suddenly develops shortness of breath, chest pain, and tachycardia. The nurse suspects a pulmonary embolism. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Administer prescribed analgesics", tag: "SAFE_DELAY" },
+    { text: "Position the client in high Fowler’s position", tag: "SCFHS" },
+    { text: "Encourage coughing and deep breathing", tag: "STR" },
+    { text: "Prepare the client for diagnostic imaging", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Positioning the client upright improves ventilation and oxygenation during suspected pulmonary embolism.",
+    distractors: {
+      SAFE_DELAY: "Analgesics do not address the immediate life-threatening oxygenation problem.",
+      STR: "Coughing and deep breathing are supportive but not the priority in acute pulmonary embolism.",
+      NCLEX: "Diagnostic imaging is important but only after stabilizing the client."
+    }
+  }
+},
+{
+  q: "82. A client receiving IV morphine for pain control becomes difficult to arouse and has a respiratory rate of 8 breaths per minute. What medication should the nurse anticipate administering?",
+  options: [
+    { text: "Naloxone", tag: "SCFHS" },
+    { text: "Flumazenil", tag: "STR" },
+    { text: "Epinephrine", tag: "SAFE_DELAY" },
+    { text: "Atropine", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Naloxone is an opioid antagonist used to reverse respiratory depression caused by opioids.",
+    distractors: {
+      STR: "Flumazenil reverses benzodiazepines, not opioids.",
+      SAFE_DELAY: "Epinephrine is used for cardiac arrest or anaphylaxis.",
+      NCLEX: "Atropine treats bradycardia, not opioid overdose."
+    }
+  }
+},
+{
+  q: "83. A nurse is teaching a client with newly diagnosed diabetes mellitus about insulin administration. Which site has the FASTEST absorption of subcutaneous insulin?",
+  options: [
+    { text: "Abdomen", tag: "SCFHS" },
+    { text: "Thigh", tag: "STR" },
+    { text: "Upper arm", tag: "SAFE_DELAY" },
+    { text: "Buttocks", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Insulin is absorbed most rapidly from the abdomen due to greater blood flow.",
+    distractors: {
+      STR: "The thigh has slower absorption than the abdomen.",
+      SAFE_DELAY: "The upper arm has variable absorption rates.",
+      NCLEX: "The buttocks have the slowest absorption."
+    }
+  }
+},
+{
+  q: "84. A client with chronic kidney disease is prescribed a low-potassium diet. Which food choice should the nurse instruct the client to AVOID?",
+  options: [
+    { text: "Bananas", tag: "SCFHS" },
+    { text: "Apples", tag: "STR" },
+    { text: "White rice", tag: "SAFE_DELAY" },
+    { text: "Cabbage", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Bananas are high in potassium and should be avoided in chronic kidney disease.",
+    distractors: {
+      STR: "Apples are low in potassium.",
+      SAFE_DELAY: "White rice is low in potassium.",
+      NCLEX: "Cabbage is generally safe in low-potassium diets."
+    }
+  }
+},
+{
+  q: "85. A nurse is caring for a client with increased intracranial pressure (ICP). Which assessment finding requires IMMEDIATE intervention?",
+  options: [
+    { text: "Unequal pupils", tag: "SCFHS" },
+    { text: "Headache rated 6/10", tag: "STR" },
+    { text: "Nausea", tag: "SAFE_DELAY" },
+    { text: "Restlessness", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Unequal pupils indicate possible brain herniation and require immediate intervention.",
+    distractors: {
+      STR: "Headache is common with increased ICP but not the most critical sign.",
+      SAFE_DELAY: "Nausea may occur but is not immediately life-threatening.",
+      NCLEX: "Restlessness is an early sign but less critical than pupil changes."
+    }
+  }
+},
+{
+  q: "86. A client with heart failure is receiving furosemide. Which laboratory value should the nurse monitor MOST closely?",
+  options: [
+    { text: "Potassium level", tag: "SCFHS" },
+    { text: "Calcium level", tag: "STR" },
+    { text: "Sodium level", tag: "SAFE_DELAY" },
+    { text: "Magnesium level", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Furosemide can cause potassium loss, increasing the risk for dysrhythmias.",
+    distractors: {
+      STR: "Calcium is less affected by loop diuretics.",
+      SAFE_DELAY: "Sodium may change but potassium loss is the greatest risk.",
+      NCLEX: "Magnesium loss can occur but is secondary to potassium concerns."
+    }
+  }
+},
+{
+  q: "87. A nurse is preparing to administer blood to a client. Which action is MOST important to prevent a transfusion reaction?",
+  options: [
+    { text: "Verify client identification with another nurse", tag: "SCFHS" },
+    { text: "Warm the blood before administration", tag: "STR" },
+    { text: "Administer blood within 6 hours", tag: "SAFE_DELAY" },
+    { text: "Use a small-gauge IV catheter", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Correct client identification is the most important step in preventing transfusion reactions.",
+    distractors: {
+      STR: "Blood should not be routinely warmed.",
+      SAFE_DELAY: "Blood must be administered within specific time limits, but identification is priority.",
+      NCLEX: "A larger gauge IV catheter is preferred for blood administration."
+    }
+  }
+},
+{
+  q: "88. A client with tuberculosis is admitted to the medical unit. Which type of room assignment is MOST appropriate?",
+  options: [
+    { text: "Negative-pressure room", tag: "SCFHS" },
+    { text: "Private room with droplet precautions", tag: "STR" },
+    { text: "Semi-private room", tag: "SAFE_DELAY" },
+    { text: "Positive-pressure room", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Tuberculosis requires airborne precautions in a negative-pressure room.",
+    distractors: {
+      STR: "Droplet precautions are insufficient for tuberculosis.",
+      SAFE_DELAY: "Semi-private rooms increase transmission risk.",
+      NCLEX: "Positive-pressure rooms are used to protect immunocompromised clients."
+    }
+  }
+},
+{
+  q: "89. A nurse is caring for a client who is receiving total parenteral nutrition (TPN). Which complication should the nurse monitor for MOST closely?",
+  options: [
+    { text: "Infection", tag: "SCFHS" },
+    { text: "Hypoglycemia", tag: "STR" },
+    { text: "Dehydration", tag: "SAFE_DELAY" },
+    { text: "Constipation", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "TPN is administered via central line, increasing the risk of bloodstream infection.",
+    distractors: {
+      STR: "Hyperglycemia is more common than hypoglycemia with TPN.",
+      SAFE_DELAY: "Fluid volume is carefully controlled with TPN.",
+      NCLEX: "Constipation is not a primary concern with TPN."
+    }
+  }
+},
+{
+  q: "90. A nurse is educating a client with asthma about peak flow meter use. Which statement by the client indicates CORRECT understanding?",
+  options: [
+    { text: "I should use the peak flow meter every morning", tag: "SCFHS" },
+    { text: "I only need to use it during an asthma attack", tag: "STR" },
+    { text: "I should use it after taking my rescue inhaler", tag: "SAFE_DELAY" },
+    { text: "I can share my peak flow meter with family members", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Daily peak flow monitoring helps assess airway status and detect early exacerbations.",
+    distractors: {
+      STR: "Peak flow monitoring is used routinely, not only during attacks.",
+      SAFE_DELAY: "Peak flow should be measured before using rescue medication.",
+      NCLEX: "Peak flow meters are for individual use only."
+    }
+  }
+}
 ];
 
 // ================= ENGINE =================
@@ -937,7 +1728,7 @@ let selectedIndex = null;
 let score = { SCFHS:0, NCLEX:0, STR:0, SAFE_DELAY:0 };
 
 // ================= TIMER =================
-let totalTime = 20 * 60; // 20 minutes
+let totalTime = 120 * 60; // 120 minutes
 let timeLeft = totalTime;
 let timerInterval = null;
 
