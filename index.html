@@ -77,7 +77,7 @@ input, button {
 <!-- EXAM SCREEN -->
 <div id="examScreen" class="hidden">
   <h2 id="qCounter"></h2>
-  <div id="timer">Time Remaining: 20:00</div>
+  <div id="timer">Time Remaining: 120:00</div>
   <p id="questionText"></p>
   <div id="options"></div>
 
@@ -455,6 +455,474 @@ const questions = [
       STR: "Inputting via coordinator does not ensure correct order verification.",
       SAFE_DELAY: "Writing order alone without read-back may risk errors.",
       NCLEX: "Calling respiratory therapist alone does not verify the order."
+    }
+  }
+},
+{
+  q: "21. A nurse is caring for a patient who is receiving enteral feedings via a nasogastric tube. Which action is the priority to prevent aspiration?",
+  options: [
+    { text: "Elevate head of the bed to 30–45 degrees", tag: "SCFHS" },
+    { text: "Check tube placement every 8 hours", tag: "STR" },
+    { text: "Flush the tube with 30 mL water before feeding", tag: "SAFE_DELAY" },
+    { text: "Document intake and output", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Elevating the head of the bed reduces the risk of aspiration during enteral feeding.",
+    distractors: {
+      STR: "Tube placement should be checked more frequently than every 8 hours.",
+      SAFE_DELAY: "Flushing ensures patency but does not prevent aspiration.",
+      NCLEX: "Documenting intake/output is important but does not prevent aspiration."
+    }
+  }
+},
+{
+  q: "22. A client with chronic obstructive pulmonary disease (COPD) is receiving oxygen therapy. Which of the following oxygen flow rates is safest for a patient at risk of CO2 retention?",
+  options: [
+    { text: "1–2 L/min via nasal cannula", tag: "SCFHS" },
+    { text: "5–6 L/min via nasal cannula", tag: "STR" },
+    { text: "8–10 L/min via simple mask", tag: "NCLEX" },
+    { text: "10–12 L/min via non-rebreather mask", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Low-flow oxygen (1–2 L/min) prevents suppression of the hypoxic drive in COPD patients at risk of CO2 retention.",
+    distractors: {
+      STR: "Higher flows can suppress respiratory drive in CO2-retentive patients.",
+      NCLEX: "8–10 L/min via mask may be too high and unsafe for CO2-retentive patients.",
+      SAFE_DELAY: "High-flow non-rebreather can be dangerous in CO2-retentive COPD patients."
+    }
+  }
+},
+{
+  q: "23. A nurse is preparing to administer a morning dose of digoxin. The patient's apical pulse is 48 beats per minute. What is the best nursing action?",
+  options: [
+    { text: "Hold the dose and notify the physician", tag: "SCFHS" },
+    { text: "Give the dose as prescribed", tag: "STR" },
+    { text: "Check blood pressure before administering", tag: "SAFE_DELAY" },
+    { text: "Assess respiratory rate before administering", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Digoxin can cause bradycardia; withholding the dose and notifying the physician is appropriate.",
+    distractors: {
+      STR: "Administering despite low pulse may be harmful.",
+      SAFE_DELAY: "Blood pressure check is important but pulse is priority with digoxin.",
+      NCLEX: "Respiratory rate assessment is not directly related to digoxin administration."
+    }
+  }
+},
+{
+  q: "24. A nurse is caring for a client who has an indwelling urinary catheter. Which nursing action best prevents infection?",
+  options: [
+    { text: "Maintaining a closed drainage system", tag: "SCFHS" },
+    { text: "Changing catheter every 24 hours", tag: "STR" },
+    { text: "Irrigating catheter daily", tag: "SAFE_DELAY" },
+    { text: "Applying antiseptic to the catheter insertion site twice daily", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Maintaining a closed system reduces the risk of catheter-associated urinary tract infections.",
+    distractors: {
+      STR: "Routine frequent catheter changes increase infection risk.",
+      SAFE_DELAY: "Routine irrigation is not indicated and may introduce infection.",
+      NCLEX: "Topical antiseptic does not replace the need for a closed drainage system."
+    }
+  }
+},
+{
+  q: "25. A nurse is planning care for a client with heart failure who has pulmonary edema. Which intervention should the nurse prioritize?",
+  options: [
+    { text: "Elevate the head of the bed", tag: "SCFHS" },
+    { text: "Encourage oral fluids", tag: "STR" },
+    { text: "Administer a high-sodium diet", tag: "SAFE_DELAY" },
+    { text: "Assist with ambulation", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Elevating the head of the bed improves oxygenation in clients with pulmonary edema.",
+    distractors: {
+      STR: "Fluid intake may worsen pulmonary edema.",
+      SAFE_DELAY: "High sodium worsens fluid retention.",
+      NCLEX: "Ambulation may be limited due to respiratory compromise."
+    }
+  }
+},
+{
+  q: "26. A nurse assesses a client who has been on prolonged bed rest. The skin over the sacrum is red and non-blanchable. How should the nurse document this pressure injury?",
+  options: [
+    { text: "Stage II", tag: "STR" },
+    { text: "Stage I", tag: "SCFHS" },
+    { text: "Stage III", tag: "SAFE_DELAY" },
+    { text: "Stage IV", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Non-blanchable redness indicates a Stage I pressure injury.",
+    distractors: {
+      STR: "Stage II involves partial-thickness skin loss.",
+      SAFE_DELAY: "Stage III involves full-thickness skin loss.",
+      NCLEX: "Stage IV involves full-thickness tissue loss with exposed structures."
+    }
+  }
+},
+{
+  q: "27. A patient is receiving total parenteral nutrition (TPN). Which laboratory value requires immediate intervention?",
+  options: [
+    { text: "Blood glucose 450 mg/dL", tag: "SCFHS" },
+    { text: "Sodium 140 mEq/L", tag: "STR" },
+    { text: "Potassium 4.2 mEq/L", tag: "SAFE_DELAY" },
+    { text: "BUN 18 mg/dL", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hyperglycemia is a dangerous complication of TPN and requires immediate intervention.",
+    distractors: {
+      STR: "Normal sodium is expected.",
+      SAFE_DELAY: "Normal potassium is expected.",
+      NCLEX: "BUN is within normal range and not urgent."
+    }
+  }
+},
+{
+  q: "28. A nurse is teaching a client about insulin administration. Which statement indicates correct understanding?",
+  options: [
+    { text: "I will rotate injection sites within the same area", tag: "SCFHS" },
+    { text: "I will use the same spot every time", tag: "STR" },
+    { text: "I should inject insulin into a vein", tag: "SAFE_DELAY" },
+    { text: "I can mix long-acting insulin with short-acting insulin in the same syringe", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rotating injection sites prevents lipodystrophy and improves absorption.",
+    distractors: {
+      STR: "Using the same spot can cause lipodystrophy.",
+      SAFE_DELAY: "Insulin is never given intravenously by patients.",
+      NCLEX: "Long-acting insulin should not be mixed with other types in the same syringe."
+    }
+  }
+},
+{
+  q: "29. A nurse is assessing a client with hypovolemic shock. Which finding is most indicative of this condition?",
+  options: [
+    { text: "Low blood pressure and tachycardia", tag: "SCFHS" },
+    { text: "Hypertension and bradycardia", tag: "STR" },
+    { text: "Warm, flushed skin", tag: "SAFE_DELAY" },
+    { text: "Bounding pulses", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hypotension and tachycardia are classic signs of hypovolemic shock.",
+    distractors: {
+      STR: "Hypertension and bradycardia are not typical of hypovolemic shock.",
+      SAFE_DELAY: "Skin is usually cool and clammy, not warm and flushed.",
+      NCLEX: "Bounding pulses are not seen in hypovolemic shock."
+    }
+  }
+},
+{
+  q: "30. A client is prescribed warfarin. Which laboratory test is most important to monitor?",
+  options: [
+    { text: "PT/INR", tag: "SCFHS" },
+    { text: "aPTT", tag: "STR" },
+    { text: "Platelet count", tag: "SAFE_DELAY" },
+    { text: "Hemoglobin", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "PT/INR is used to monitor the therapeutic effect of warfarin.",
+    distractors: {
+      STR: "aPTT monitors heparin therapy, not warfarin.",
+      SAFE_DELAY: "Platelet count is not the primary monitoring parameter.",
+      NCLEX: "Hemoglobin is not specific for warfarin therapy monitoring."
+    }
+  }
+},
+{
+  q: "31. A nurse is performing a head-to-toe assessment. Which action is priority when assessing the neurological system?",
+  options: [
+    { text: "Assess level of consciousness", tag: "SCFHS" },
+    { text: "Check pupillary reaction", tag: "STR" },
+    { text: "Test deep tendon reflexes", tag: "SAFE_DELAY" },
+    { text: "Assess muscle strength", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Level of consciousness is the earliest indicator of neurological changes.",
+    distractors: {
+      STR: "Pupillary reaction is important but secondary to LOC.",
+      SAFE_DELAY: "Deep tendon reflexes are part of neuro exam but not the first priority.",
+      NCLEX: "Muscle strength is also assessed later in the neuro exam."
+    }
+  }
+},
+{
+  q: "32. A nurse is educating a patient about smoking cessation. Which statement demonstrates effective teaching?",
+  options: [
+    { text: "I will use nicotine patches to help reduce cravings", tag: "SCFHS" },
+    { text: "I can continue smoking while using nicotine gum", tag: "STR" },
+    { text: "Quitting cold turkey is unsafe", tag: "SAFE_DELAY" },
+    { text: "I should avoid all physical activity", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Nicotine replacement therapy such as patches helps reduce withdrawal symptoms and cravings.",
+    distractors: {
+      STR: "Combining smoking with nicotine replacement is unsafe and counterproductive.",
+      SAFE_DELAY: "Quitting abruptly can be safe with proper support.",
+      NCLEX: "Avoiding activity is not recommended; exercise is encouraged."
+    }
+  }
+},
+{
+  q: "33. A client with a chest tube has continuous bubbling in the water seal chamber. Which action should the nurse take?",
+  options: [
+    { text: "Notify the physician", tag: "SCFHS" },
+    { text: "Milk the chest tube", tag: "STR" },
+    { text: "Clamp the chest tube", tag: "SAFE_DELAY" },
+    { text: "Encourage deep breathing", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Continuous bubbling indicates an air leak, which requires notification of the physician.",
+    distractors: {
+      STR: "Milking is generally not recommended and can be harmful.",
+      SAFE_DELAY: "Clamping can cause tension pneumothorax and is unsafe.",
+      NCLEX: "Deep breathing does not resolve an air leak."
+    }
+  }
+},
+{
+  q: "34. A nurse is caring for a patient on bed rest with a history of DVT. Which intervention is most important to prevent thrombus formation?",
+  options: [
+    { text: "Applying sequential compression devices (SCDs)", tag: "SCFHS" },
+    { text: "Encouraging a high-calorie diet", tag: "STR" },
+    { text: "Using pillows under knees", tag: "SAFE_DELAY" },
+    { text: "Keeping the patient NPO", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "SCDs promote venous return and prevent thrombus formation in immobile patients.",
+    distractors: {
+      STR: "Diet is not a primary preventive measure for DVT.",
+      SAFE_DELAY: "Pillows under knees may actually impede venous return.",
+      NCLEX: "NPO status does not prevent DVT."
+    }
+  }
+},
+{
+  q: "35. A nurse is performing an initial assessment on a newborn. Which finding is abnormal and requires immediate action?",
+  options: [
+    { text: "Respiratory rate of 60 breaths/min", tag: "STR" },
+    { text: "Heart rate of 180 bpm", tag: "SCFHS" },
+    { text: "Mild acrocyanosis", tag: "SAFE_DELAY" },
+    { text: "Soft fontanelle", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "A heart rate of 180 bpm may indicate tachycardia and requires prompt evaluation.",
+    distractors: {
+      STR: "Respiratory rate of 60 is within normal newborn range.",
+      SAFE_DELAY: "Mild acrocyanosis is common at birth.",
+      NCLEX: "Soft fontanelle is normal."
+    }
+  }
+},
+{
+  q: "36. A patient is receiving IV potassium chloride. Which assessment requires immediate intervention?",
+  options: [
+    { text: "Serum potassium 6.8 mEq/L", tag: "SCFHS" },
+    { text: "Serum potassium 4.0 mEq/L", tag: "STR" },
+    { text: "Urine output 50 mL/hr", tag: "SAFE_DELAY" },
+    { text: "Blood pressure 120/80 mmHg", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hyperkalemia (K>6.0) is life-threatening and requires immediate intervention.",
+    distractors: {
+      STR: "Potassium of 4.0 is normal.",
+      SAFE_DELAY: "Urine output is adequate.",
+      NCLEX: "Blood pressure is normal."
+    }
+  }
+},
+{
+  q: "37. A nurse is planning care for a patient with a tracheostomy. Which intervention is highest priority?",
+  options: [
+    { text: "Maintain a patent airway", tag: "SCFHS" },
+    { text: "Provide oral care every 4 hours", tag: "STR" },
+    { text: "Change tracheostomy ties daily", tag: "SAFE_DELAY" },
+    { text: "Assess stoma for infection", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway maintenance is the highest priority for a patient with a tracheostomy.",
+    distractors: {
+      STR: "Oral care is important but not the top priority.",
+      SAFE_DELAY: "Changing ties is routine care.",
+      NCLEX: "Stoma assessment is important but secondary to airway patency."
+    }
+  }
+},
+{
+  q: "38. A client is admitted with hyperthyroidism. Which finding should the nurse anticipate?",
+  options: [
+    { text: "Tachycardia", tag: "SCFHS" },
+    { text: "Bradycardia", tag: "STR" },
+    { text: "Weight gain", tag: "SAFE_DELAY" },
+    { text: "Cold intolerance", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hyperthyroidism increases metabolic rate, causing tachycardia.",
+    distractors: {
+      STR: "Bradycardia is more typical of hypothyroidism.",
+      SAFE_DELAY: "Weight loss occurs in hyperthyroidism.",
+      NCLEX: "Cold intolerance occurs in hypothyroidism."
+    }
+  }
+},
+{
+  q: "39. A nurse is teaching a client with chronic kidney disease about dietary restrictions. Which instruction is most important?",
+  options: [
+    { text: "Limit intake of foods high in potassium", tag: "SCFHS" },
+    { text: "Increase fluid intake", tag: "STR" },
+    { text: "Eat high-protein diet freely", tag: "SAFE_DELAY" },
+    { text: "Take herbal supplements for kidney health", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hyperkalemia is a life-threatening complication; limiting potassium is essential.",
+    distractors: {
+      STR: "Fluid restriction may be needed depending on stage; increasing may be harmful.",
+      SAFE_DELAY: "High-protein intake should be monitored.",
+      NCLEX: "Herbal supplements may be unsafe for kidney disease."
+    }
+  }
+},
+{
+  q: "40. A patient presents with chest pain. Which assessment finding requires immediate action?",
+  options: [
+    { text: "ST-segment elevation on ECG", tag: "SCFHS" },
+    { text: "Mild anxiety", tag: "STR" },
+    { text: "Normal blood pressure", tag: "SAFE_DELAY" },
+    { text: "History of hypertension", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "ST-segment elevation may indicate acute myocardial infarction and requires immediate intervention.",
+    distractors: {
+      STR: "Mild anxiety is not immediately life-threatening.",
+      SAFE_DELAY: "Normal BP is not an urgent finding.",
+      NCLEX: "History alone does not require immediate action."
+    }
+  }
+},
+{
+  q: "41. A nurse is caring for a patient with pneumonia who suddenly becomes short of breath and has a respiratory rate of 34/min. What is the nurse’s priority action?",
+  options: [
+    { text: "Assess oxygen saturation and administer oxygen", tag: "SCFHS" },
+    { text: "Encourage coughing and deep breathing", tag: "STR" },
+    { text: "Document findings in the chart", tag: "SAFE_DELAY" },
+    { text: "Notify the dietitian", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Acute respiratory distress requires immediate assessment and oxygen administration.",
+    distractors: {
+      STR: "Coughing and deep breathing are important but not the immediate priority.",
+      SAFE_DELAY: "Documentation is not urgent in an acute situation.",
+      NCLEX: "Dietitian notification is unrelated to acute respiratory distress."
+    }
+  }
+},
+{
+  q: "42. A client with congestive heart failure is receiving furosemide. Which finding indicates a potential complication of this medication?",
+  options: [
+    { text: "Serum potassium 2.9 mEq/L", tag: "SCFHS" },
+    { text: "Blood pressure 118/76 mmHg", tag: "STR" },
+    { text: "Heart rate 88 bpm", tag: "SAFE_DELAY" },
+    { text: "Urine output 1.2 mL/kg/hr", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hypokalemia is a common and serious complication of loop diuretics.",
+    distractors: {
+      STR: "Normal BP is not indicative of a complication.",
+      SAFE_DELAY: "Heart rate within normal range is expected.",
+      NCLEX: "Adequate urine output is expected and safe."
+    }
+  }
+},
+{
+  q: "43. A 70-year-old man is brought to the emergency department on a wheelchair. He complains of drowsiness, fatigue, and lack of appetite for the past three days. He has not ambulated much due to arthritis. Why is constipation a common problem in immobilized patients?",
+  options: [
+    { text: "Decreased peristalsis", tag: "SCFHS" },
+    { text: "Increased colon motility", tag: "STR" },
+    { text: "Increased defecation reflex", tag: "SAFE_DELAY" },
+    { text: "Decreased tightening of the anal sphincter", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immobilization decreases intestinal peristalsis, leading to constipation.",
+    distractors: {
+      STR: "Colon motility actually decreases, not increases.",
+      SAFE_DELAY: "Defecation reflex is reduced, not increased.",
+      NCLEX: "Anal sphincter function is not the primary cause of constipation in immobilized patients."
+    }
+  }
+},
+{
+  q: "44. A nurse is caring for a patient two hours after pacemaker placement. The patient suddenly complains of chest pain, dyspnea, cyanosis, and absent breath sounds on the right side. What complication should the nurse anticipate?",
+  options: [
+    { text: "Pneumothorax", tag: "SCFHS" },
+    { text: "Hemothorax", tag: "STR" },
+    { text: "Perforation of the heart", tag: "SAFE_DELAY" },
+    { text: "Hemorrhage", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Sudden dyspnea, absent breath sounds, and cyanosis indicate pneumothorax.",
+    distractors: {
+      STR: "Hemothorax would also show diminished breath sounds but is less common post-pacemaker.",
+      SAFE_DELAY: "Cardiac perforation may present differently with hypotension and arrhythmias.",
+      NCLEX: "Hemorrhage would show bleeding and hypotension, not absent breath sounds."
+    }
+  }
+},
+{
+  q: "45. A 30-week gestation client in preterm labor is prescribed betamethasone. What is the purpose of this medication?",
+  options: [
+    { text: "Promote fetal lung maturity", tag: "SCFHS" },
+    { text: "Delay delivery for at least 48 hours", tag: "STR" },
+    { text: "Stop premature uterine contractions", tag: "SAFE_DELAY" },
+    { text: "Prevent premature closure of the ductus arteriosus", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Betamethasone accelerates fetal lung maturity in preterm labor.",
+    distractors: {
+      STR: "Delaying delivery may occur but is not the primary purpose.",
+      SAFE_DELAY: "It does not stop contractions.",
+      NCLEX: "It does not affect ductus arteriosus closure."
+    }
+  }
+},
+{
+  q: "46. A patient with pulmonary embolism complains of pain, dyspnea, and fear of dying. Which intervention would most likely reduce the patient’s anxiety?",
+  options: [
+    { text: "Listen to the patient’s concerns", tag: "SCFHS" },
+    { text: "Administer oxygen as ordered", tag: "STR" },
+    { text: "Administer pain medication as ordered", tag: "SAFE_DELAY" },
+    { text: "Observe closely for signs of pain and discomfort", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Active listening addresses psychological distress and reduces anxiety.",
+    distractors: {
+      STR: "Oxygen may help physiologically but does not directly reduce anxiety.",
+      SAFE_DELAY: "Pain medication helps with pain, not directly anxiety.",
+      NCLEX: "Observation alone does not intervene in anxiety."
     }
   }
 },
